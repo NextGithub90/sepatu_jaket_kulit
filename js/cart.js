@@ -4,7 +4,7 @@ let cart = [];
 
 // Initialize cart from LocalStorage
 function initCart() {
-    const savedCart = localStorage.getItem('kulitgarut_cart');
+    const savedCart = localStorage.getItem('solusibooth_cart');
     if (savedCart) {
         cart = JSON.parse(savedCart);
     }
@@ -37,7 +37,7 @@ function addToCart(product) {
         cart.push(product);
     }
     
-    localStorage.setItem('kulitgarut_cart', JSON.stringify(cart));
+    localStorage.setItem('solusibooth_cart', JSON.stringify(cart));
     updateCartBadge();
     
     // Alert user
@@ -146,7 +146,7 @@ function processOrder(e) {
     }
     
     // Format Products
-    let orderText = `*HALO ADMIN KULITGARUT*\nSaya ingin membuat pesanan baru:\n\n*DETAIL PESANAN:*\n`;
+    let orderText = `*HALO ADMIN SOLUSI BOOTH*\nSaya ingin membuat pesanan baru:\n\n*DETAIL PESANAN:*\n`;
     let subtotal = 0;
     
     cart.forEach((item, index) => {
@@ -176,10 +176,10 @@ function processOrder(e) {
     
     // Encode for URL
     const encodedText = encodeURIComponent(orderText);
-    const waNumber = '6283852443148';
+    const waNumber = '6281330701235';
     
     // Clear cart
-    localStorage.removeItem('kulitgarut_cart');
+    localStorage.removeItem('solusibooth_cart');
     
     // Redirect
     window.location.href = `https://wa.me/${waNumber}?text=${encodedText}`;
