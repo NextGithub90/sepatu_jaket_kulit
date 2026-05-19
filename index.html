@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepatu & Jaket Kulit Garut | Premium Leather Goods</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header glass-header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    <path d="M12 6v12M6 12h12" stroke-dasharray="2 2" />
+                </svg>
+                <span class="logo-text">KulitGarut.</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="active">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="header-icons">
+                <a href="#" class="icon-link">
+                    <i class="ph ph-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="ph ph-heart"></i>
+                    <span class="badge-count">2</span>
+                </a>
+                <a href="checkout.html" class="icon-link">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="badge-count cart-count">0</span>
+                </a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="mobile-close" id="mobileClose"><i class="ph ph-x"></i></button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="active">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="beranda" style="padding-top: 70px; background: var(--bg-surface);">
+        <img src="images/hero-banner.png" alt="Promo Sepatu dan Jaket Kulit" style="width: 100%; display: block; object-fit: cover;">
+    </section>
+
+    <!-- Kategori Section -->
+    <section class="categories" id="kategori">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Kategori Pilihan</h2>
+                <p>Temukan koleksi kulit terbaik sesuai kebutuhan Anda</p>
+            </div>
+            <div class="category-grid">
+                <a href="#produk" class="category-card reveal-up" style="transition-delay: 100ms;">
+                    <div class="category-img">
+                        <img src="images/product-shoes.png" alt="Sepatu Kulit">
+                    </div>
+                    <div class="category-content">
+                        <h3>Sepatu Kulit</h3>
+                        <span>120+ Produk <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="#produk" class="category-card reveal-up" style="transition-delay: 200ms;">
+                    <div class="category-img">
+                        <img src="images/product-jacket.png" alt="Jaket Kulit">
+                    </div>
+                    <div class="category-content">
+                        <h3>Jaket Kulit</h3>
+                        <span>80+ Produk <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="#paket-usaha" class="category-card highlight-cat reveal-up" style="transition-delay: 300ms;">
+                    <div class="category-img">
+                        <img src="images/hero-composition.png" alt="Paket Usaha">
+                    </div>
+                    <div class="category-content">
+                        <h3>Paket Usaha</h3>
+                        <span>Harga Reseller <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us" id="keunggulan">
+        <div class="container">
+            <div class="wcu-grid">
+                <div class="wcu-text reveal-left">
+                    <span class="sub-heading">MENGAPA MEMILIH KAMI</span>
+                    <h2>Kualitas Terbaik Langsung Dari Pengrajin</h2>
+                    <p>Kami tidak hanya menjual produk, tapi sebuah karya seni dari pengrajin kulit Garut yang
+                        diwariskan turun-temurun.</p>
+                    <ul class="wcu-list">
+                        <li><i class="ph-fill ph-check-circle"></i> 100% Kulit Domba & Sapi Asli</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Jahitan Rapi & Kuat (Garansi 1 Tahun)</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Bisa Custom Ukuran & Model</li>
+                    </ul>
+                </div>
+                <div class="wcu-image reveal-right">
+                    <img src="images/man-leather-jacket.png" alt="Pengrajin Kulit">
+                    <div class="experience-badge">
+                        <span class="number">10</span>
+                        <span class="text">Tahun<br>Pengalaman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section" id="produk">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Produk Terlaris</h2>
+                <p>Koleksi paling dicari oleh pelanggan setia kami</p>
+
+                <div class="product-filters">
+                    <button class="filter-btn active">Semua</button>
+                    <button class="filter-btn">Sepatu</button>
+                    <button class="filter-btn">Jaket</button>
+                    <button class="filter-btn">Paket Usaha</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card-modern reveal-up">
+                    <div class="product-badge discount">-50%</div>
+                    <div class="product-img-box">
+                        <img src="images/product-shoes.png" alt="Sepatu Kulit Pantofel">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="window.location.href='product-detail.html'"><i
+                                    class="ph ph-eye"></i></button>
+                            <button class="action-btn"><i class="ph ph-heart"></i></button>
+                            <button class="action-btn add-to-cart-btn"><i class="ph ph-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info-modern">
+                        <div class="rating">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star-half"></i>
+                            <span>(45)</span>
+                        </div>
+                        <h3><a href="product-detail.html">Sepatu Kulit Formal Pria Premium</a></h3>
+                        <div class="price-wrap">
+                            <span class="price-new">Rp 350.000</span>
+                            <span class="price-old">Rp 700.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card-modern reveal-up" style="transition-delay: 100ms;">
+                    <div class="product-badge new">Baru</div>
+                    <div class="product-img-box" style="background-color: #F8F9FA;">
+                        <img src="images/product-jacket.png" alt="Jaket Kulit">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="window.location.href='product-detail.html'"><i
+                                    class="ph ph-eye"></i></button>
+                            <button class="action-btn"><i class="ph ph-heart"></i></button>
+                            <button class="action-btn add-to-cart-btn"><i class="ph ph-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info-modern">
+                        <div class="rating">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                            <span>(128)</span>
+                        </div>
+                        <h3><a href="product-detail.html">Jaket Kulit Domba Asli Garut Klasik</a></h3>
+                        <div class="price-wrap">
+                            <span class="price-new">Rp 1.500.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card-modern reveal-up" style="transition-delay: 200ms;">
+                    <div class="product-img-box" style="background-color: #ECEFF1;">
+                        <img src="images/product-shoes.png" alt="Sepatu Casual"
+                            style="filter: brightness(0.8) sepia(0.5);">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="window.location.href='product-detail.html'"><i
+                                    class="ph ph-eye"></i></button>
+                            <button class="action-btn"><i class="ph ph-heart"></i></button>
+                            <button class="action-btn add-to-cart-btn"><i class="ph ph-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info-modern">
+                        <div class="rating">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph ph-star"></i>
+                            <span>(32)</span>
+                        </div>
+                        <h3><a href="product-detail.html">Sepatu Kulit Casual Slip-on</a></h3>
+                        <div class="price-wrap">
+                            <span class="price-new">Rp 280.000</span>
+                            <span class="price-old">Rp 350.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card-modern reveal-up" style="transition-delay: 300ms;">
+                    <div class="product-badge special">Paket Usaha</div>
+                    <div class="product-img-box" style="background-color: #FFF3E0;">
+                        <img src="images/product-shoes.png" alt="Paket Usaha" style="transform: scale(1.1);">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="window.location.href='product-detail.html'"><i
+                                    class="ph ph-eye"></i></button>
+                            <button class="action-btn"><i class="ph ph-heart"></i></button>
+                            <button class="action-btn"><i class="ph ph-whatsapp-logo"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info-modern">
+                        <div class="rating">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                            <span>(15)</span>
+                        </div>
+                        <h3><a href="product-detail.html">Paket Reseller Sepatu Kulit 10 Pcs</a></h3>
+                        <div class="price-wrap">
+                            <span class="price-new">Rp 1.500.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-wrap reveal-up">
+                <a href="#" class="btn btn-outline">Lihat Semua Produk <i class="ph ph-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimoni">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Kata Mereka</h2>
+                <p>Ulasan nyata dari pelanggan yang puas</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal-up">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Kualitas jaket kulitnya sangat memuaskan, bahannya lentur, ukurannya pas dan
+                        jahitannya sangat rapi. Benar-benar kerajinan Garut asli. Sangat direkomendasikan!"</p>
+                    <div class="customer-info">
+                        <div class="avatar">A</div>
+                        <div>
+                            <h4>Ahmad R.</h4>
+                            <span>Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-up" style="transition-delay: 100ms;">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Pesan sepatu pantofel untuk kerja. Dipakai seharian tidak bikin lecet,
+                        solnya juga tidak licin. Harganya jauh lebih murah dibanding beli di mall dengan kualitas
+                        setara."</p>
+                    <div class="customer-info">
+                        <div class="avatar">B</div>
+                        <div>
+                            <h4>Budi S.</h4>
+                            <span>Bandung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-up" style="transition-delay: 200ms;">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Saya ambil paket usaha 10 pcs, barang cepat sampai dan laku keras di toko
+                        saya. Pelayanannya sangat ramah dan kooperatif. Terima kasih banyak!"</p>
+                    <div class="customer-info">
+                        <div class="avatar">D</div>
+                        <div>
+                            <h4>Dedi M.</h4>
+                            <span>Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & CTA -->
+    <section class="newsletter-cta reveal-up">
+        <div class="container">
+            <div class="cta-inner">
+                <div class="cta-text">
+                    <h2>Dapatkan Promo Spesial!</h2>
+                    <p>Berlangganan newsletter kami dan jadilah yang pertama tahu tentang produk baru, penawaran
+                        eksklusif, dan diskon besar.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Masukkan email Anda" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo footer-logo">
+                        <i class="ph-fill ph-bag"></i> KulitGarut.
+                    </a>
+                    <p>Menghadirkan mahakarya kerajinan kulit asli Garut. Kombinasi sempurna antara tradisi, kualitas,
+                        dan gaya hidup modern.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="toko.html">Toko</a></li>
+                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Layanan Pelanggan</h4>
+                    <ul>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Retur</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-map-pin"></i> Jl. Ir. H. Juanda No.55, Sukaregang, Kab. Garut</li>
+                        <li><i class="ph ph-phone"></i> 0812-3456-7890</li>
+                        <li><i class="ph ph-envelope-simple"></i> info@kulitgarut.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 KulitGarut. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="ph ph-credit-card"></i>
+                    <i class="ph ph-bank"></i>
+                    <i class="ph ph-money"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko | Sepatu & Jaket Kulit Garut</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: var(--bg-surface);">
+
+    <!-- Header -->
+    <header class="header glass-header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    <path d="M12 6v12M6 12h12" stroke-dasharray="2 2"/>
+                </svg>
+                <span class="logo-text">KulitGarut.</span>
+            </a>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html" class="active">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="header-icons">
+                <a href="#" class="icon-link">
+                    <i class="ph ph-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="ph ph-heart"></i>
+                    <span class="badge-count">2</span>
+                </a>
+                <a href="checkout.html" class="icon-link">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="badge-count cart-count">0</span>
+                </a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="mobile-close" id="mobileClose"><i class="ph ph-x"></i></button>
+            <nav class="mobile-nav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html" class="active">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: radial-gradient(circle at center, var(--bg-alt) 0%, var(--bg-main) 100%); padding: 120px 0 60px;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: 42px; margin-bottom: 10px;">Katalog Produk</h1>
+            <p style="color: var(--text-gray);">Temukan pilihan terbaik untuk gaya Anda.</p>
+        </div>
+    </section>
+
+    <!-- Shop Layout -->
+    <section class="shop-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="shop-layout" style="display: flex; gap: 40px; align-items: flex-start;">
+                
+                <!-- Sidebar -->
+                <aside class="shop-sidebar" style="width: 250px; flex-shrink: 0; background: var(--bg-alt); padding: 30px; border-radius: 16px;">
+                    <div class="sidebar-widget" style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 15px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px;">Kategori</h4>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--primary); font-weight: 600;">Semua Produk (215)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-gray);">Sepatu Kulit Pria (85)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-gray);">Jaket Kulit (60)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-gray);">Paket Usaha (12)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-gray);">Aksesoris (58)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4 style="margin-bottom: 15px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px;">Harga</h4>
+                        <input type="range" min="100000" max="3000000" style="width: 100%; margin-bottom: 10px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 14px; color: var(--text-gray);">
+                            <span>Rp 100Rb</span>
+                            <span>Rp 3Jt+</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Area -->
+                <div class="shop-products" style="flex: 1;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <span style="color: var(--text-gray);">Menampilkan 1-6 dari 215 produk</span>
+                        <select style="padding: 10px 15px; border-radius: 8px; border: 1px solid var(--border-color); outline: none; background: white; font-family: inherit;">
+                            <option>Terbaru</option>
+                            <option>Terlaris</option>
+                            <option>Harga: Rendah ke Tinggi</option>
+                            <option>Harga: Tinggi ke Rendah</option>
+                        </select>
+                    </div>
+
+                    <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                        
+                        <!-- P1 -->
+                        <div class="product-card-modern reveal-up">
+                            <div class="product-badge discount">-50%</div>
+                            <div class="product-img-box">
+                                <img src="images/product-shoes.png" alt="Sepatu Kulit">
+                                <div class="product-actions">
+                                    <button class="action-btn" onclick="window.location.href='product-detail.html'"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart-btn"><i class="ph ph-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info-modern">
+                                <div class="rating">
+                                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i>
+                                    <span>(45)</span>
+                                </div>
+                                <h3><a href="product-detail.html">Sepatu Kulit Formal Pria Premium</a></h3>
+                                <div class="price-wrap">
+                                    <span class="price-new">Rp 350.000</span>
+                                    <span class="price-old">Rp 700.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- P2 -->
+                        <div class="product-card-modern reveal-up" style="transition-delay: 100ms;">
+                            <div class="product-badge new">Baru</div>
+                            <div class="product-img-box" style="background-color: #F8F9FA;">
+                                <img src="images/premium_leather_jacket.png" alt="Jaket Kulit">
+                                <div class="product-actions">
+                                    <button class="action-btn" onclick="window.location.href='product-detail.html'"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart-btn"><i class="ph ph-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info-modern">
+                                <div class="rating">
+                                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                    <span>(128)</span>
+                                </div>
+                                <h3><a href="product-detail.html">Jaket Kulit Domba Asli Garut Klasik</a></h3>
+                                <div class="price-wrap">
+                                    <span class="price-new">Rp 1.500.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- P3 -->
+                        <div class="product-card-modern reveal-up" style="transition-delay: 200ms;">
+                            <div class="product-img-box" style="background-color: #ECEFF1;">
+                                <img src="images/product-shoes.png" alt="Sepatu Casual" style="filter: brightness(0.8) sepia(0.5);">
+                                <div class="product-actions">
+                                    <button class="action-btn" onclick="window.location.href='product-detail.html'"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart-btn"><i class="ph ph-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info-modern">
+                                <div class="rating">
+                                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph ph-star"></i>
+                                    <span>(32)</span>
+                                </div>
+                                <h3><a href="product-detail.html">Sepatu Kulit Casual Slip-on</a></h3>
+                                <div class="price-wrap">
+                                    <span class="price-new">Rp 280.000</span>
+                                    <span class="price-old">Rp 350.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- P4 -->
+                        <div class="product-card-modern reveal-up">
+                            <div class="product-badge special">Paket Usaha</div>
+                            <div class="product-img-box" style="background-color: #FFF3E0;">
+                                <img src="images/product-shoes.png" alt="Paket Usaha" style="transform: scale(1.1);">
+                                <div class="product-actions">
+                                    <button class="action-btn" onclick="window.location.href='product-detail.html'"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn"><i class="ph ph-whatsapp-logo"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info-modern">
+                                <div class="rating">
+                                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                    <span>(15)</span>
+                                </div>
+                                <h3><a href="product-detail.html">Paket Reseller Sepatu Kulit 10 Pcs</a></h3>
+                                <div class="price-wrap">
+                                    <span class="price-new">Rp 1.500.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div style="display: flex; justify-content: center; gap: 10px; margin-top: 50px;">
+                        <button class="btn btn-primary add-to-cart-btn" style="padding: 10px 15px;"><i class="ph ph-caret-left"></i></button>
+                        <button class="btn btn-primary add-to-cart-btn" style="padding: 10px 20px;">1</button>
+                        <button class="btn btn-outline" style="padding: 10px 20px;">2</button>
+                        <button class="btn btn-outline" style="padding: 10px 20px;">3</button>
+                        <button class="btn btn-outline" style="padding: 10px 15px;"><i class="ph ph-caret-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="ph-fill ph-bag"></i> KulitGarut.
+                    </a>
+                    <p>Menghadirkan mahakarya kerajinan kulit asli Garut. Kombinasi sempurna antara tradisi, kualitas, dan gaya hidup modern.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="toko.html">Toko</a></li>
+                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Layanan Pelanggan</h4>
+                    <ul>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Retur</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-map-pin"></i> Jl. Ir. H. Juanda No.55, Sukaregang, Kab. Garut</li>
+                        <li><i class="ph ph-phone"></i> 0812-3456-7890</li>
+                        <li><i class="ph ph-envelope-simple"></i> info@kulitgarut.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 KulitGarut. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="ph ph-credit-card"></i>
+                    <i class="ph ph-bank"></i>
+                    <i class="ph ph-money"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

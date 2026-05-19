@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Sepatu & Jaket Kulit Garut</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: var(--bg-surface);">
+
+    <!-- Header -->
+    <header class="header glass-header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    <path d="M12 6v12M6 12h12" stroke-dasharray="2 2"/>
+                </svg>
+                <span class="logo-text">KulitGarut.</span>
+            </a>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html" class="active">Kontak</a>
+            </nav>
+
+            <div class="header-icons">
+                <a href="#" class="icon-link">
+                    <i class="ph ph-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="ph ph-heart"></i>
+                    <span class="badge-count">2</span>
+                </a>
+                <a href="checkout.html" class="icon-link">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="badge-count cart-count">0</span>
+                </a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="mobile-close" id="mobileClose"><i class="ph ph-x"></i></button>
+            <nav class="mobile-nav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html" class="active">Kontak</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: radial-gradient(circle at center, var(--bg-alt) 0%, var(--bg-main) 100%); padding: 120px 0 60px;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: 42px; margin-bottom: 10px;">Hubungi Kami</h1>
+            <p style="color: var(--text-gray);">Kami siap membantu menjawab pertanyaan dan pesanan Anda.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" style="padding: 80px 0;">
+        <div class="container">
+            <div style="display: flex; gap: 60px; flex-wrap: wrap;">
+                
+                <!-- Contact Info -->
+                <div style="flex: 1; min-width: 300px;" class="reveal-left">
+                    <h2 style="font-size: 32px; margin-bottom: 30px;">Mari Berbincang</h2>
+                    <p style="color: var(--text-gray); margin-bottom: 40px; line-height: 1.8;">Punya pertanyaan spesifik tentang ukuran, bahan, atau pesanan kustom? Tim kami siap melayani Anda. Kunjungi toko offline kami atau hubungi kami secara online.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <div style="display: flex; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary);">
+                                <i class="ph-fill ph-map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px; font-size: 18px;">Alamat Toko</h4>
+                                <p style="color: var(--text-gray); line-height: 1.6;">Jl. Ir. H. Juanda No.55, Ds. Ciroyom<br>Kec. Sukaregang, Kab. Garut<br>Jawa Barat 44116</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary);">
+                                <i class="ph-fill ph-phone"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px; font-size: 18px;">Telepon / WhatsApp</h4>
+                                <p style="color: var(--text-gray); line-height: 1.6;">0812-3456-7890<br>0898-7654-3210</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary);">
+                                <i class="ph-fill ph-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px; font-size: 18px;">Email</h4>
+                                <p style="color: var(--text-gray); line-height: 1.6;">info@kulitgarut.com<br>support@kulitgarut.com</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: var(--bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary);">
+                                <i class="ph-fill ph-clock"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px; font-size: 18px;">Jam Operasional</h4>
+                                <p style="color: var(--text-gray); line-height: 1.6;">Senin - Sabtu: 08:00 - 17:00<br>Minggu: Libur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div style="flex: 1; min-width: 300px; background: var(--bg-main); padding: 50px; border-radius: 20px; box-shadow: var(--shadow-md);" class="reveal-right">
+                    <h3 style="font-size: 24px; margin-bottom: 25px;">Kirim Pesan Langsung</h3>
+                    <form>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text-dark);">Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama Anda" style="width: 100%; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 15px; outline: none;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text-dark);">Alamat Email</label>
+                            <input type="email" placeholder="contoh@email.com" style="width: 100%; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 15px; outline: none;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text-dark);">Subjek</label>
+                            <input type="text" placeholder="Perihal pesan" style="width: 100%; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 15px; outline: none;">
+                        </div>
+                        <div style="margin-bottom: 25px;">
+                            <label style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text-dark);">Pesan Anda</label>
+                            <textarea placeholder="Tuliskan detail pertanyaan atau pesanan Anda..." rows="5" style="width: 100%; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 15px; outline: none; resize: vertical;"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 16px;">Kirim Pesan Sekarang <i class="ph ph-paper-plane-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section reveal-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126601.76100569772!2d107.82098679469279!3d-7.2185253818318625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b0c326084a3b%3A0x401e8f1fc28d3a0!2sGarut%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="ph-fill ph-bag"></i> KulitGarut.
+                    </a>
+                    <p>Menghadirkan mahakarya kerajinan kulit asli Garut. Kombinasi sempurna antara tradisi, kualitas, dan gaya hidup modern.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="toko.html">Toko</a></li>
+                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Layanan Pelanggan</h4>
+                    <ul>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Retur</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-map-pin"></i> Jl. Ir. H. Juanda No.55, Sukaregang, Kab. Garut</li>
+                        <li><i class="ph ph-phone"></i> 0812-3456-7890</li>
+                        <li><i class="ph ph-envelope-simple"></i> info@kulitgarut.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 KulitGarut. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="ph ph-credit-card"></i>
+                    <i class="ph ph-bank"></i>
+                    <i class="ph ph-money"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

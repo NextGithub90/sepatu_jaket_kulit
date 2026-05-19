@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | Sepatu & Jaket Kulit Garut</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header glass-header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    <path d="M12 6v12M6 12h12" stroke-dasharray="2 2"/>
+                </svg>
+                <span class="logo-text">KulitGarut.</span>
+            </a>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html" class="active">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="header-icons">
+                <a href="#" class="icon-link tooltip-wrap" data-tooltip="Cari">
+                    <i class="ph ph-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-link tooltip-wrap" data-tooltip="Favorit">
+                    <i class="ph ph-heart"></i>
+                    <span class="badge-count">2</span>
+                </a>
+                <a href="checkout.html" class="icon-link tooltip-wrap" data-tooltip="Keranjang">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="badge-count cart-count">0</span>
+                </a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="mobile-close" id="mobileClose"><i class="ph ph-x"></i></button>
+            <nav class="mobile-nav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html" class="active">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: radial-gradient(circle at center, var(--bg-alt) 0%, var(--bg-main) 100%); padding: 120px 0 60px;">
+        <div class="container text-center reveal-up">
+            <h1 style="font-size: 42px; margin-bottom: 10px;">Kisah Kami</h1>
+            <p style="color: var(--text-gray);">Dedikasi untuk kualitas dan tradisi kerajinan Garut sejak 2016.</p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section" style="padding: 80px 0;">
+        <div class="container">
+            <div style="display: flex; gap: 60px; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;" class="reveal-left">
+                    <img src="images/man-leather-jacket.png" alt="Pengrajin" style="border-radius: 16px; box-shadow: var(--shadow-lg);">
+                </div>
+                <div style="flex: 1; min-width: 300px;" class="reveal-right">
+                    <span style="color: var(--primary); font-weight: 700; font-size: 14px; letter-spacing: 1px;">SEJARAH SINGKAT</span>
+                    <h2 style="margin: 10px 0 20px; font-size: 32px;">Warisan Tradisi Garut</h2>
+                    <p style="color: var(--text-gray); margin-bottom: 20px; line-height: 1.8;">Berawal dari sebuah bengkel kecil di sudut kota Garut, kami bermimpi membawa keindahan dan keuletan kulit asli Indonesia ke kancah yang lebih luas. Dengan teknik yang diturunkan dari generasi ke generasi, kami terus berinovasi menghasilkan jaket dan sepatu kulit berkualitas premium.</p>
+                    <p style="color: var(--text-gray); line-height: 1.8;">Kini, kami tidak hanya memberdayakan puluhan pengrajin lokal, tetapi juga telah melayani ribuan pelanggan di seluruh Indonesia yang percaya pada dedikasi dan kejujuran produk kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="core-values" style="padding: 80px 0; background: var(--bg-surface);">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Nilai Utama Kami</h2>
+                <p>Prinsip yang kami pegang teguh dalam setiap produk yang kami buat</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <div class="value-card reveal-up" style="background: var(--bg-alt); padding: 40px; border-radius: 16px; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 20px;">
+                        <i class="ph-fill ph-medal"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px;">Kualitas Premium</h3>
+                    <p style="color: var(--text-gray); font-size: 14px;">Hanya menggunakan material kulit sapi dan domba pilihan terbaik untuk keawetan maksimal.</p>
+                </div>
+                
+                <div class="value-card reveal-up" style="background: var(--bg-alt); padding: 40px; border-radius: 16px; text-align: center; transition-delay: 100ms;">
+                    <div style="width: 70px; height: 70px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 20px;">
+                        <i class="ph-fill ph-hand-heart"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px;">Buatan Tangan</h3>
+                    <p style="color: var(--text-gray); font-size: 14px;">Setiap jahitan dikerjakan dengan hati-hati oleh tangan terampil pengrajin berpengalaman.</p>
+                </div>
+                
+                <div class="value-card reveal-up" style="background: var(--bg-alt); padding: 40px; border-radius: 16px; text-align: center; transition-delay: 200ms;">
+                    <div style="width: 70px; height: 70px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 20px;">
+                        <i class="ph-fill ph-leaf"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px;">Berkelanjutan</h3>
+                    <p style="color: var(--text-gray); font-size: 14px;">Mendukung ekonomi lokal Garut sambil tetap memperhatikan proses penyamakan yang ramah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="ph-fill ph-bag"></i> KulitGarut.
+                    </a>
+                    <p>Menghadirkan mahakarya kerajinan kulit asli Garut. Kombinasi sempurna antara tradisi, kualitas, dan gaya hidup modern.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="toko.html">Toko</a></li>
+                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Layanan Pelanggan</h4>
+                    <ul>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Retur</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-map-pin"></i> Jl. Ir. H. Juanda No.55, Sukaregang, Kab. Garut</li>
+                        <li><i class="ph ph-phone"></i> 0812-3456-7890</li>
+                        <li><i class="ph ph-envelope-simple"></i> info@kulitgarut.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 KulitGarut. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="ph ph-credit-card"></i>
+                    <i class="ph ph-bank"></i>
+                    <i class="ph ph-money"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

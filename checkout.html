@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Sepatu & Jaket Kulit Garut</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: var(--bg-surface); padding-top: 100px;"> <!-- Padding for sticky header -->
+
+    <!-- Header -->
+    <header class="header glass-header" id="header" style="background: white;">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    <path d="M12 6v12M6 12h12" stroke-dasharray="2 2"/>
+                </svg>
+                <span class="logo-text">KulitGarut.</span>
+            </a>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="header-icons">
+                <a href="checkout.html" class="icon-link tooltip-wrap" data-tooltip="Keranjang">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="badge-count cart-count">0</span>
+                </a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="mobile-close" id="mobileClose"><i class="ph ph-x"></i></button>
+            <nav class="mobile-nav">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="toko.html">Toko</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Checkout Steps Header -->
+    <div style="border-bottom: 1px solid var(--border-color); background: white; padding: 20px 0;">
+        <div class="container" style="display: flex; gap: 40px; text-transform: uppercase; font-size: 14px; font-weight: 700;">
+            <div style="color: var(--text-gray);">SHOPPING CART<br><span style="font-size: 12px; font-weight: 500; text-transform: none;">Manage Your Items List</span></div>
+            <div style="color: var(--text-dark);">CHECKOUT DETAILS<br><span style="font-size: 12px; font-weight: 500; text-transform: none; color: var(--text-gray);">Checkout Your Items List</span></div>
+            <div style="color: #e0e0e0;">ORDER COMPLETE<br><span style="font-size: 12px; font-weight: 500; text-transform: none;">Review Your Order</span></div>
+        </div>
+    </div>
+
+    <section style="padding: 40px 0 80px;">
+        <div class="container">
+            <p style="margin-bottom: 30px; font-size: 14px;">Punya kupon? <a href="#" style="color: var(--text-dark); font-weight: 600;">Klik di sini untuk memasukkan kode Anda <i class="ph ph-caret-down"></i></a></p>
+
+            <form id="checkout-form" style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+                
+                <!-- Left Column: Billing Details -->
+                <div style="flex: 2; min-width: 300px; background: white; padding: 30px; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h3 style="font-size: 18px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 0.5px;">DETAIL TAGIHAN</h3>
+                    
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                        <div style="flex: 1;">
+                            <input type="text" id="fname" placeholder="Nama depan *" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                        </div>
+                        <div style="flex: 1;">
+                            <input type="text" id="lname" placeholder="Nama belakang *" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <select id="country" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none; appearance: none; background: url('data:image/svg+xml;utf8,<svg fill=%22black%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/><path d=%22M0 0h24v24H0z%22 fill=%22none%22/></svg>') no-repeat right 10px center;">
+                            <option value="Indonesia">Negara/Wilayah: Indonesia</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="address" placeholder="Nomor rumah dan nama jalan *" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="address2" placeholder="Apartemen, suit, unit, dll. (opsional)" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="city" placeholder="Kota *" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <select id="province" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none; appearance: none; background: url('data:image/svg+xml;utf8,<svg fill=%22black%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/><path d=%22M0 0h24v24H0z%22 fill=%22none%22/></svg>') no-repeat right 10px center;">
+                            <option value="">Pilih Provinsi *</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="DKI Jakarta">DKI Jakarta</option>
+                            <option value="Banten">Banten</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="DI Yogyakarta">DI Yogyakarta</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Sumatera Utara">Sumatera Utara</option>
+                            <option value="Lainnya">Lainnya...</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="zip" placeholder="Kode pos *" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                    </div>
+
+                    <div style="display: flex; gap: 20px; margin-bottom: 25px;">
+                        <div style="flex: 1;">
+                            <input type="tel" id="phone" placeholder="Telepon *" required style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                        </div>
+                        <div style="flex: 1;">
+                            <input type="email" id="email" placeholder="Alamat email" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none;">
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; cursor: pointer;">
+                            <input type="checkbox" style="width: 16px; height: 16px;">
+                            Kirim ke alamat yang berbeda?
+                        </label>
+                    </div>
+
+                    <div>
+                        <textarea id="notes" placeholder="Catatan tentang pesanan Anda, misal: catatan khusus untuk pengiriman." rows="4" style="width: 100%; padding: 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit; font-size: 14px; outline: none; resize: vertical;"></textarea>
+                    </div>
+                </div>
+
+                <!-- Right Column: Order Summary -->
+                <div style="flex: 1; min-width: 300px; background: #F8F9FA; padding: 30px; border-radius: 8px;">
+                    <h3 style="font-size: 18px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 0.5px; text-align: center;">YOUR ORDER</h3>
+                    
+                    <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 14px; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px;">
+                        <span>PRODUCT</span>
+                        <span>SUBTOTAL</span>
+                    </div>
+
+                    <!-- Cart Items go here -->
+                    <div id="checkout-items-container" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px;">
+                        <!-- Items rendered by cart.js -->
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; margin-bottom: 15px;">
+                        <span>Subtotal</span>
+                        <span id="checkout-subtotal">Rp0</span>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; margin-bottom: 20px;">
+                        <span>Pengiriman</span>
+                        <span style="color: var(--text-gray); font-weight: 500;">Pengiriman gratis</span>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; font-size: 16px; font-weight: 800; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; margin-bottom: 25px;">
+                        <span>TOTAL</span>
+                        <span id="checkout-total" style="color: var(--danger);">Rp0</span>
+                    </div>
+
+                    <!-- Payment Options -->
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; margin-bottom: 15px;">
+                            <input type="radio" name="payment_method" value="Transfer Bank" checked style="margin-top: 3px;">
+                            <div>
+                                <span style="font-weight: 600; font-size: 14px; display: block; margin-bottom: 10px;">Transfer Bank Langsung</span>
+                                <div style="background: white; padding: 15px; border-radius: 4px; font-size: 12px; color: var(--text-gray); line-height: 1.6; border: 1px solid #e2e8f0;">
+                                    Silahkan lakukan pembayaran Anda ke rekening berikut:<br>
+                                    <strong>BCA: 1234567890 A.N: KulitGarut</strong><br>
+                                    Jika sudah melakukan pembayaran, segera konfirmasi ke WhatsApp beserta bukti transfer.
+                                </div>
+                            </div>
+                        </label>
+
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                            <input type="radio" name="payment_method" value="Bayar di tempat (COD)">
+                            <span style="font-weight: 600; font-size: 14px;">Bayar di tempat (COD)</span>
+                        </label>
+                    </div>
+
+                    <p style="font-size: 12px; color: var(--text-gray); line-height: 1.6; margin-bottom: 25px;">
+                        Data pribadi Anda akan digunakan untuk memproses pesanan Anda, menunjang pengalaman Anda di seluruh situs web ini, dan untuk tujuan lain yang dijelaskan dalam kebijakan privasi kami.
+                    </p>
+
+                    <button type="submit" id="btn-buat-pesanan" style="width: 100%; background: #1D4ED8; color: white; border: none; padding: 15px; font-weight: 700; font-size: 14px; border-radius: 4px; cursor: pointer; transition: background 0.3s; letter-spacing: 0.5px;">
+                        BUAT PESANAN
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="ph-fill ph-bag"></i> KulitGarut.
+                    </a>
+                    <p>Menghadirkan mahakarya kerajinan kulit asli Garut. Kombinasi sempurna antara tradisi, kualitas, dan gaya hidup modern.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-map-pin"></i> Jl. Ir. H. Juanda No.55, Kab. Garut</li>
+                        <li><i class="ph ph-phone"></i> 0812-3456-7890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KulitGarut. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
