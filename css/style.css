@@ -182,6 +182,12 @@ h2 {
     letter-spacing: -0.5px;
 }
 
+.logo-img {
+    height: 59px;
+    width: auto;
+    object-fit: contain;
+}
+
 .main-nav {
     display: flex;
     gap: 32px;
