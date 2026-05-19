@@ -176,7 +176,7 @@ function processOrder(e) {
     
     // Encode for URL
     const encodedText = encodeURIComponent(orderText);
-    const waNumber = '6281234567890';
+    const waNumber = '6283852443148';
     
     // Clear cart
     localStorage.removeItem('kulitgarut_cart');
