@@ -176,7 +176,7 @@ function processOrder(e) {
     
     // Encode for URL
     const encodedText = encodeURIComponent(orderText);
-    const waNumber = '6282364512788';
+    const waNumber = '6281330701235';
     
     // Clear cart
     localStorage.removeItem('solusibooth_cart');
